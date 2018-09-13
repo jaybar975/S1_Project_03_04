@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'), url('DobkinPlain.ttf') format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Justin Aybar 
+   Date: 9.13.18  
+   
+   Filename: lake_styles.css
+*/
+
+/* Structure */
+html {
+    background-color: rgb(235, 87, 87)
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+p {
+    margin-left: 10px;
+}
+
+/* Body */
+header {
+    background-color: rgb(235, 87, 87);
+}
+
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+h1#welcome {
+    font-family: Champagne;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+section#rightcol {
+    background-color: #1E90FF;
+    border: 3px, solid black;
+}
+
+aside {
+    background-color: #1E90FF;
+}
+
+aside#white p {
+    color: white;
+}
+
+aside h1,
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: upper-alpha;
+    line-height: 30px;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+blockquote {
+    color: rgb(0, 0, 0);
+    margin: 20px 5px;
+    quotes: '\201C''\201D';
+    font-size: 0.95em;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-family: sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-family: sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #c09f80;
+    text-align: center;
+}
